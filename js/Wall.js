@@ -21,7 +21,7 @@ export default class Wall {
     this.height = App.height;
 
     this.gapY = randomNumBetween(App.height * 0.2 , App.height * 0.35 ) // 장애물 간격=화면크기의 10%~20%
-    this.gapY = App.height * 0.4
+    // this.gapY = App.height * 0.4
     this.x = App.width;
     
     // 장애물 위치
@@ -38,7 +38,7 @@ export default class Wall {
     this.generatedNext = false;
     this.gapNextX = App.width * randomNumBetween(0.6, 0.75); // 벽 나오는 속도
 
-    this.gapNextX = App.width * 0.4;//test 용
+    // this.gapNextX = App.width * 0.4;//test 용
   }
   get isOutside(){
     //boolean 화면에서 나갔는지 않나갔는지
@@ -64,11 +64,11 @@ export default class Wall {
     this.boundingBox2.x = this.x + 30;
   }
 
-  test(){
-    this.x = 700
-    this.boundingBox1.x = this.x + 30;
-    this.boundingBox2.x = this.x + 30;
-  }
+  // test(){
+  //   this.x = 700
+  //   this.boundingBox1.x = this.x + 30;
+  //   this.boundingBox2.x = this.x + 30;
+  // }
 
   draw(){
     // this.test();
