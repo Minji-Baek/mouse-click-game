@@ -36,7 +36,7 @@ export default class Wall {
     this.boundingBox2 = new BoundingBox(this.x + 30, this.y2 + 30, this.width - 60, this.height - 60);
 
     this.generatedNext = false;
-    this.gapNextX = App.width * randomNumBetween(0.6, 0.75); // 벽 나오는 속도
+    this.gapNextX = App.width * randomNumBetween(0.4, 0.6); // 벽 나오는 속도
 
     // this.gapNextX = App.width * 0.4;//test 용
   }
